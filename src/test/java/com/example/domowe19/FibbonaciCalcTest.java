@@ -8,45 +8,6 @@ public class FibbonaciCalcTest {
 
 
     @Test
-    public void showSumEvenFibb(){
-        //given
-        FibbonaciCalc fibbonaciCalc = new FibbonaciCalc();
-
-        fibbonaciCalc.getNumbers().add(3);
-        fibbonaciCalc.getNumbers().add(5);
-        fibbonaciCalc.getNumbers().add(8);
-        fibbonaciCalc.getNumbers().add(13);
-        fibbonaciCalc.getNumbers().add(21);
-
-        //when
-        int sum = fibbonaciCalc.sumEvenNo();
-
-        //then
-        Assert.assertThat(sum, CoreMatchers.is(10));
-
-    }
-
-    @Test
-    public void showSumEvenRandom(){
-        //given
-        FibbonaciCalc fibbonaciCalc = new FibbonaciCalc();
-
-        fibbonaciCalc.getNumbers().add(4);
-        fibbonaciCalc.getNumbers().add(5);
-        fibbonaciCalc.getNumbers().add(8);
-        fibbonaciCalc.getNumbers().add(12);
-        fibbonaciCalc.getNumbers().add(15);
-        fibbonaciCalc.getNumbers().add(21);
-
-        //when
-        int sum = fibbonaciCalc.sumEvenNo();
-
-        //then
-        Assert.assertThat(sum, CoreMatchers.is(26));
-
-    }
-
-    @Test
     public void showSumFibbEvenNumberFor20(){
         //given
         FibbonaciCalc fibbonaciCalc = new FibbonaciCalc();
